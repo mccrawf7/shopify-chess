@@ -1,0 +1,80 @@
+.game-container {
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #95BF47;
+  border-radius: 50%;
+  animation: twinkle 1.5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.bounce-animation {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.piece-hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.winner-animation {
+  animation: celebrate 0.5s ease-in-out infinite;
+}
+
+@keyframes celebrate {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.board-square {
+  transition: all 0.3s ease;
+}
+
+.board-square:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shopify-king {
+  animation: float 2s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1.5); }
+  50% { transform: translateY(-5px) scale(1.5); }
+}
