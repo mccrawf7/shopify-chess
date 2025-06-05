@@ -23,4 +23,4 @@ const ShoppyMascot = ({color}: {color: string}) => (
     <circle cx="350" cy="450" r="50" fill={color === 'white' ? '#000000' : '#ffffff'}/>
     <circle cx="650" cy="450" r="50" fill={color === 'white' ? '#000000' : '#ffffff'}/>
     <path d="M500 550L450 650H550L500 550Z" fill={color === 'white' ? '#000000' : '#ffffff'}/>
-    <path d="M300 600C300 600 400 700 500 700C600 700 700 600 700 600" stroke={color === 'white' ? '#000000' : '#ffffff'} strokeWidth="40"
+    <path d="M300 600C300 600 400 700 500 700C600 700 700 600 700 600" stroke={color === 'white' ? '#000000' : '#ffffff'} strokeWidth="40"/>
