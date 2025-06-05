@@ -49,8 +49,8 @@ const ShoppyMascot = ({ color }: { color: string }) => (
     />
     <path
       d="M500 550L450 650H550L500 550Z"
-      fill={color === 'white'
- />
+      fill={color === 'white' ? '#000000' : '#ffffff'}
+    />
     <path
       d="M300 600C300 600 400 700 500 700C600 700 700 600 700 600"
       stroke={color === 'white' ? '#000000' : '#ffffff'}
@@ -58,3 +58,5 @@ const ShoppyMascot = ({ color }: { color: string }) => (
     />
   </svg>
 );
+
+export default ShoppyMascot;
